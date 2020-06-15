@@ -3,7 +3,7 @@ import content from '../content.json';
 
 const About = () => (
   <div>
-    <h1>About</h1>
+    <h1>Who We Are</h1>
     {content.bio.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
   </div>
 );

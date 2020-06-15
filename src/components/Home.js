@@ -6,9 +6,9 @@ const Home = () => (
   <>
     <img src={`${config.publicCloudfrontURL}/template-home.jpg`} alt={config.businessName} className="home-page-image" />
     <div>
-      <h1>Awesome Website Title</h1>
-      <p>Time to create an awesome website.</p>
-      <a href="/items"><Button size="lg" variant="outline-dark">{'Let\'s go'}</Button></a>
+      <h1>Business Name</h1>
+      <p>Tagline tagline tagline tagline tagline.</p>
+      <a href="/programs"><Button size="lg" variant="outline-dark">Call to action</Button></a>
     </div>
   </>
 );

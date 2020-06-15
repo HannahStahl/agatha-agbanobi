@@ -8,36 +8,34 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Home from './components/Home';
 import About from './components/About';
-import Items from './components/Items';
-import Item from './components/Item';
+import Services from './components/Services';
+import Definitions from './components/Definitions';
+import Programs from './components/Programs';
+import Blog from './components/Blog';
+import BlogPost from './components/BlogPost';
 import Contact from './components/Contact';
-import Cart from './components/Cart';
 import NotFound from './components/NotFound';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import config from './config';
 
-const Routes = ({ items, cart, updateCart }) => (
+const Routes = ({ programs, blogPosts }) => (
   <Switch>
     <Route path="/" exact component={Home} />
     <Route path="/about" exact component={About} />
-    <Route path="/items" exact render={() => <Items items={items} />} />
-    <Route path="/items/:itemName" exact render={(props) => <Item match={props.match} items={items} updateCart={updateCart} />} />
+    <Route path="/services" exact component={Services} />
+    <Route path="/concepts" exact component={Definitions} />
+    <Route path="/programs" exact render={() => <Programs programs={programs} />} />
+    <Route path="/blog" exact render={() => <Blog blogPosts={blogPosts} />} />
+    <Route path="/blog/:blogPostTitle" exact render={(props) => <BlogPost match={props.match} blogPosts={blogPosts} />} />
     <Route path="/contact" exact component={Contact} />
-    <Route path="/cart" exact render={() => <Cart items={items} cart={cart} updateCart={updateCart} />} />
     <Route component={NotFound} />
   </Switch>
 );
 
 const App = withRouter(() => {
-  const [items, setItems] = useState([]);
-  const [cart, setCart] = useState([]);
-
-  const updateCart = (newCart) => {
-    if (newCart) localStorage.setItem('cart', JSON.stringify(newCart));
-    const cartStr = localStorage.getItem('cart');
-    setCart(cartStr ? JSON.parse(cartStr) : []);
-  };
+  const [programs, setPrograms] = useState([]);
+  const [blogPosts, setBlogPosts] = useState([]);
 
   useEffect(() => {
     Promise.all([
@@ -45,26 +43,26 @@ const App = withRouter(() => {
       fetch(`${config.apiURL}/itemsToPhotos/${config.userID}`).then((res) => res.json()),
       fetch(`${config.apiURL}/photos/${config.userID}`).then((res) => res.json()),
     ]).then((results) => {
-      const [itemsList, itemsToPhotos, photos] = results;
-      itemsList.forEach((item, index) => {
-        const itemPhotoIds = itemsToPhotos
-          .filter((row) => row.itemId === item.itemId)
+      const [itemsList, programsToPhotos, photos] = results;
+      itemsList.forEach((program, index) => {
+        const programPhotoIds = programsToPhotos
+          .filter((row) => row.itemId === program.itemId)
           .map((row) => row.photoId);
-        itemsList[index].itemPhotos = photos.filter(
-          (photo) => itemPhotoIds.includes(photo.photoId),
+        itemsList[index].photos = photos.filter(
+          (photo) => programPhotoIds.includes(photo.photoId),
         );
       });
-      setItems(itemsList);
+      const programsList = itemsList.filter((itemInList) => itemInList.cmsPageConfigId === '1');
+      const blogPostsList = itemsList.filter((itemInList) => itemInList.cmsPageConfigId === '3');
+      setPrograms(programsList);
+      setBlogPosts(blogPostsList);
     });
-    updateCart();
   }, []);
 
   return (
     <>
-      <NavBar cart={cart} />
-      <div className="page-content">
-        <Routes items={items} cart={cart} updateCart={updateCart} />
-      </div>
+      <NavBar />
+      <div className="page-content"><Routes programs={programs} blogPosts={blogPosts} /></div>
       {window.location.pathname !== '/' && <Footer />}
     </>
   );
@@ -72,7 +70,4 @@ const App = withRouter(() => {
 
 ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
