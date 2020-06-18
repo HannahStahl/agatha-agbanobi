@@ -124,7 +124,7 @@ img, input, textarea, button {
   background-color: #eee;
   box-shadow: -5px 5px 5px 0px #ddd;
   margin: 65px auto 35px auto;
-  padding: 20px;
+  padding: 30px;
 }
 
 .program .fa-external-link-alt {
@@ -133,7 +133,7 @@ img, input, textarea, button {
 
 .program-img {
   width: 300px;
-  max-width: calc(100% - 40px);
+  max-width: calc(100% - 60px);
   height: 100%;
   object-fit: cover;
   margin-right: 20px;
