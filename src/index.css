@@ -11,7 +11,6 @@ body {
   font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
 }
 
 code {
@@ -42,6 +41,10 @@ h1 {
   margin-bottom: 30px;
 }
 
+img {
+  border-radius: 10px;
+}
+
 .home-page-image {
   position: fixed;
   top: 0;
@@ -54,7 +57,6 @@ h1 {
 }
 
 .home-page-content {
-  text-align: left;
   margin-top: 50px;
   max-width: 700px;
 }
@@ -68,7 +70,6 @@ h1 {
 }
 
 .about-page-content {
-  text-align: left;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
@@ -103,14 +104,44 @@ h1 {
   align-items: center;
 }
 
-.programs, .blog-posts {
+.programs-page-content {
+  max-width: min(1000px, 90%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.program {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  border: solid 1px #ddd;
+  border-radius: 10px;
+  background-color: #eee;
+  box-shadow: -5px 5px 5px 0px #ddd;
+  margin: 65px auto 35px auto;
+  padding: 20px;
 }
 
-.program, .blog-post {
+.program .fa-external-link-alt {
+  margin-left: 12px;
+}
+
+.program-img {
+  width: 300px;
+  max-width: calc(100% - 40px);
+  height: 100%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.program-text {
+  min-width: 250px;
+  max-width: calc(100% - 340px);
+  margin-left: 20px;
+}
+
+.blog-post {
   position: relative;
   width: 20%;
   min-width: 300px;
@@ -120,11 +151,11 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 1px black;
-  color: black;
+  border: solid 1px #eee;
+  border-radius: 10px;
 }
 
-.program-img, .blog-post-img {
+.blog-post-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -153,7 +184,7 @@ h1 {
 }
 
 @media all and (min-width: 1200px) {
-  p {
+  p, a {
     font-size: 1.25rem;
   }
 }
@@ -179,6 +210,27 @@ h1 {
   }
 }
 
+@media all and (max-width: 816px) {
+  .program {
+    width: 320px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .program-img {
+    max-width: 280px;
+    margin-left: 20px;
+  }
+
+  .program-text {
+    width: 280px;
+    max-width: 280px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+}
+
 @media all and (max-width: 599px) {
   .home-page-image {
     object-position: 90%;
@@ -186,6 +238,10 @@ h1 {
 }
 
 @media all and (hover: hover) {
+  a:hover {
+    text-decoration: none;
+  }
+
   .navbar-light .navbar-nav .nav-link:hover {
     color: #212529;
   }
