@@ -14,8 +14,10 @@ const prod = {
   userID: 'us-east-1:47a5b5e0-f86e-438b-a150-0f4fc1fdfcfa',
 };
 
-// Always use dev config for this branch
-const config = dev;
+// Default to dev if not set
+const config = process.env.REACT_APP_STAGE === 'prod'
+  ? prod
+  : dev;
 
 export default {
   // Add common config values here
