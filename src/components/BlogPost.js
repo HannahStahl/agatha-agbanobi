@@ -1,35 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import moment from 'moment';
 import config from '../config';
 
-const BlogPost = ({ match, blogPosts }) => {
-  const [blogPost, setBlogPost] = useState(undefined);
-
-  useEffect(() => {
-    const blogPostTitle = unescape(match.params.blogPostTitle).replace(/_/g, ' ');
-    const blogPostDetails = blogPosts.find((blogPostInList) => (
-      blogPostInList.itemName.toLowerCase() === blogPostTitle.toLowerCase()
-    ));
-    setBlogPost(blogPostDetails);
-  }, [match.params.blogPostTitle, blogPosts]);
+const BlogPost = ({ blogPost }) => {
+  const [expanded, setExpanded] = useState(false);
 
   return (
-    <div>
-      {blogPost && (
-        <>
-          <h1>{blogPost.itemName}</h1>
-          <p>{blogPost.itemDescription}</p>
-          <div className="blog-posts">
-            {blogPost.photos.map((photo) => (
-              <div className="blog-post" key={photo.photoName}>
-                <img
-                  className="blog-post-img"
-                  src={`${config.cloudfrontURL}/${photo.photoName}`}
-                  alt={blogPost.itemName}
-                />
-              </div>
-            ))}
-          </div>
-        </>
+    <div className="blog-post">
+      <img
+        src={`${config.cloudfrontURL}/${blogPost.photos[0].photoName}`}
+        alt={blogPost.itemName}
+        className="blog-post-img"
+      />
+      <h2 className="blog-post-title">{blogPost.itemName}</h2>
+      <p className="blog-post-date">{moment(blogPost.datePublished).format('MMMM D, YYYY')}</p>
+      <div
+        className={`blog-post-content${expanded ? '' : ' collapsed'}`}
+        dangerouslySetInnerHTML={{ __html: blogPost.itemHtml }}
+      />
+      {!expanded && (
+        <p className="read-more" onClick={() => setExpanded(true)}>
+          Read more
+          <i className="fas fa-angle-down" />
+        </p>
       )}
     </div>
   );

@@ -159,13 +159,30 @@ img {
   width: 100%;
 }
 
-.blog-post h2 {
-  margin-top: 20px;
+.blog-post-title {
+  margin-top: 25px;
   margin-bottom: 10px;
 }
 
 .blog-post-date {
   margin-bottom: 30px;
+}
+
+.blog-post-content {
+  overflow: hidden;
+}
+
+.blog-post-content.collapsed {
+  height: 120px;
+}
+
+.blog-post .read-more {
+  margin-top: 20px;
+  color: #007bff;
+}
+
+.blog-post .read-more .fas {
+  margin-left: 10px;
 }
 
 .footer {
@@ -251,5 +268,10 @@ img {
 
   .navbar-light .navbar-nav .nav-link:hover {
     color: #212529;
+  }
+
+  .blog-post .read-more:hover {
+    cursor: pointer;
+    color: #0056b3;
   }
 }

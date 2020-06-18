@@ -4,7 +4,7 @@ import config from '../config';
 const Programs = ({ programs }) => (
   <div className="programs-page-content">
     <h1>
-      Help your workplace learn about diversity and inclusion through convenient online courses.
+      Help your workplace learn about diversity and inclusion through convenient online programs.
     </h1>
     <div className="programs">
       {programs.map((program) => (

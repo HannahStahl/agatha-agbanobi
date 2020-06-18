@@ -12,7 +12,6 @@ import Services from './components/Services';
 import Definitions from './components/Definitions';
 import Programs from './components/Programs';
 import Blog from './components/Blog';
-import BlogPost from './components/BlogPost';
 import Contact from './components/Contact';
 import NotFound from './components/NotFound';
 import NavBar from './components/NavBar';
@@ -27,7 +26,6 @@ const Routes = ({ programs, blogPosts }) => (
     <Route path="/concepts" exact component={Definitions} />
     <Route path="/programs" exact render={() => <Programs programs={programs} />} />
     <Route path="/blog" exact render={() => <Blog blogPosts={blogPosts} />} />
-    <Route path="/blog/:blogPostTitle" exact render={(props) => <BlogPost match={props.match} blogPosts={blogPosts} />} />
     <Route path="/contact" exact component={Contact} />
     <Route component={NotFound} />
   </Switch>
