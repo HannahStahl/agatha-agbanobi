@@ -7,7 +7,7 @@ const Home = () => (
     <img src={`${config.publicCloudfrontURL}/agbanobi-home.jpg`} alt={config.businessName} className="home-page-image" />
     <div className="home-page-content">
       <h1>Insert catchy tagline here.</h1>
-      <h3>Insert a lengthier sub-tagline with more detail here.</h3>
+      <h3>Insert a lengthier subheader with more detail here.</h3>
       <a href="/programs">
         <Button size="lg" variant="outline-dark">
           Learn more
