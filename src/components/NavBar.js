@@ -9,8 +9,6 @@ const NavBar = () => (
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="ml-auto" activeKey={window.location.pathname}>
         <Nav.Link href="/about">About Us</Nav.Link>
-        <Nav.Link href="/concepts">Organizational Leadership</Nav.Link>
-        <Nav.Link href="/services">Services</Nav.Link>
         <Nav.Link href="/programs">Programs</Nav.Link>
         <Nav.Link href="/blog">Blog</Nav.Link>
         <Nav.Link href="/contact">Contact Us</Nav.Link>
