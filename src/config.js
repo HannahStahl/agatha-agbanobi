@@ -11,7 +11,7 @@ const prod = {
   cloudfrontBaseURL: 'https://d1esxin5o90ebg.cloudfront.net',
   emailURL: 'https://aiikn63n03.execute-api.us-east-1.amazonaws.com/prod/email/send',
   emailAddress: 'agatha.agbanobi@gmail.com',
-  userID: 'us-east-1:e51b2b71-8b21-46c0-a302-6f3b84783041', // Change to Agatha's user ID
+  userID: 'us-east-1:47a5b5e0-f86e-438b-a150-0f4fc1fdfcfa',
 };
 
 // Default to dev if not set
