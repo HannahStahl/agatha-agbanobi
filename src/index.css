@@ -252,7 +252,7 @@ input, textarea, button {
 
 @media all and (min-width: 600px) {
   .home-page-content {
-    margin-left: 80px;
+    margin-left: 70px;
   }
 
   .home-page-content h1 {

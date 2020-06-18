@@ -8,7 +8,7 @@ const Home = () => (
     <div className="home-page-content">
       <h1>Insert catchy tagline here.</h1>
       <h3>Insert a lengthier subheader with more detail here.</h3>
-      <a href="/programs">
+      <a href="/about">
         <Button size="lg" variant="outline-dark">
           Learn more
         </Button>
