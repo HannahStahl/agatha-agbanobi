@@ -8,12 +8,12 @@ html, body, #root {
 
 body {
   margin: 0;
-  font-family: 'Manrope', sans-serif !important;
+  font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-body * {
+body *:not(.fas) {
   font-family: 'Manrope', sans-serif !important;
 }
 
@@ -45,8 +45,8 @@ h1 {
   margin-bottom: 30px;
 }
 
-img {
-  border-radius: 10px;
+img, input, textarea, button {
+  border-radius: 10px !important;
 }
 
 .home-page-image {
@@ -185,6 +185,44 @@ img {
   margin-left: 10px;
 }
 
+.contact-page {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-page-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-header {
+  margin-bottom: 20px;
+}
+
+.contact-note {
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 500px;
+  padding-right: 50px;
+  border-right: solid 1px #ccc;
+}
+
+.contact-details {
+  padding-left: 50px;
+}
+
+.contact-method {
+  display: flex;
+}
+
+.contact-method .fas {
+  margin-right: 20px;
+  width: 20px;
+}
+
 .footer {
   height: 80px;
   width: 100%;
@@ -227,6 +265,24 @@ img {
   .about-page-content-block .about-text {
     width: 100%;
     height: auto;
+  }
+}
+
+@media all and (max-width: 909px) {
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    border-right: none;
+    border-bottom: solid 1px #ccc;
+  }
+
+  .contact-details {
+    padding-left: 0px;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
