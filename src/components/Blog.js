@@ -1,23 +1,21 @@
 import React from 'react';
+import moment from 'moment';
 import config from '../config';
 
 const Blog = ({ blogPosts }) => (
   <div>
-    <h1>Blog</h1>
     <div className="blog-posts">
       {blogPosts.map((blogPost) => (
-        <a
-          key={blogPost.itemId}
-          href={escape(`/blog/${blogPost.itemName.replace(/ /g, '_').toLowerCase()}`)}
-          className="blog-post"
-        >
+        <div key={blogPost.itemId} className="blog-post">
           <img
             src={`${config.cloudfrontURL}/${blogPost.photos[0].photoName}`}
             alt={blogPost.itemName}
-            className="program-img"
+            className="blog-post-img"
           />
-          <h3>{blogPost.itemName}</h3>
-        </a>
+          <h2>{blogPost.itemName}</h2>
+          <p className="blog-post-date">{moment(blogPost.datePublished).format('MMMM D, YYYY')}</p>
+          <div dangerouslySetInnerHTML={{ __html: blogPost.itemHtml }} />
+        </div>
       ))}
     </div>
   </div>
