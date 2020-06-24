@@ -23,6 +23,6 @@ export default {
   // Add common config values here
   cloudfrontURL: `${config.cloudfrontBaseURL}/${config.userID}`,
   publicCloudfrontURL: 'https://d17jmxltsx3ffm.cloudfront.net',
-  businessName: 'Business Name', // Change to Agatha's business name
+  businessName: 'Optimal Leadership LLC',
   ...config,
 };

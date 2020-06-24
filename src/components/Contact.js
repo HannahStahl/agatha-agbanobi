@@ -101,7 +101,7 @@ const Contact = () => {
           <div className="contact-method">
             <p><i className="fas fa-map-marker-alt" /></p>
             <p>
-              Business Name
+              Optimal Leadership LLC
               <br />
               123 Address St.
               <br />
