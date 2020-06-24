@@ -89,6 +89,16 @@ input, textarea, button {
   margin-right: auto;
 }
 
+.about-page-section-header {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.about-page-section:first-of-type .about-page-section-header {
+  margin-top: 0px;
+}
+
 .about-page-content-block {
   display: flex;
   flex-wrap: wrap;
