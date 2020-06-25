@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
 const NavBar = () => (
-  <Navbar collapseOnSelect expand="lg">
+  <Navbar collapseOnSelect expand="lg" className={window.location.pathname === '/' ? 'navbar-transparent' : ''}>
     <Navbar.Brand href="/">Logo</Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">

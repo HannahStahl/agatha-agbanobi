@@ -22,6 +22,14 @@ code {
     monospace;
 }
 
+.navbar-light {
+  background-color: white;
+}
+
+.navbar-light.navbar-transparent {
+  background-color: transparent;
+}
+
 .navbar-light .navbar-nav .nav-link {
   font-size: 1.25rem;
   margin-left: 12px;
@@ -30,6 +38,7 @@ code {
 }
 
 .page-content {
+  position: relative;
   padding: 7%;
   min-height: calc(100% - 56px);
   margin-bottom: -80px;
@@ -163,8 +172,35 @@ input, textarea, button {
   visibility: hidden;
 }
 
+.about-page-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 7%;
+  height: 350px;
+  width: 100%;
+}
+
+.about-page-banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.about-page-banner-text {
+  max-width: 700px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 25px;
+  border-radius: 10px;
+}
+
 .about-page-content {
   width: 85%;
+  margin-top: 350px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -484,10 +520,6 @@ input, textarea, button {
 }
 
 @media all and (max-width: 957px) {
-  .about-page-content {
-    margin-top: 50px;
-  }
-
   .about-img {
     width: 100%;
   }
@@ -562,6 +594,14 @@ input, textarea, button {
 @media all and (max-width: 599px) {
   .home-page-image {
     object-position: 90%;
+  }
+
+  .about-page-content {
+    margin-top: 400px;
+  }
+
+  .about-page-banner-text {
+    font-size: 30px;
   }
 }
 
