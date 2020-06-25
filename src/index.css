@@ -205,7 +205,7 @@ input, textarea, button {
   top: 24px;
   width: calc(100% - 10px);
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #ccc;
 }
 
 .right-arrow .about-arrow-line {
