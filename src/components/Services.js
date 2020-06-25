@@ -10,7 +10,7 @@ const Services = () => (
           {(index % 2 === 0 || window.innerWidth <= 957) && (
             <img src={`${config.publicCloudfrontURL}/agbanobi-${section.photo}.jpg`} alt={config.businessName} />
           )}
-          <div className="services-text">
+          <div className={`services-text${index % 2 === 1 && window.innerWidth > 957 ? ' right-aligned' : ''}`}>
             <h2 className="services-page-section-header">{section.header}</h2>
             <p>{section.text}</p>
           </div>

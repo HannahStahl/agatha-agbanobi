@@ -170,9 +170,7 @@ input, textarea, button {
 }
 
 .about-page-section-header {
-  text-align: center;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 25px;
 }
 
 .about-page-section:first-of-type .about-page-section-header {
@@ -183,17 +181,62 @@ input, textarea, button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
-.about-page-content-block img {
+.about-img {
   width: calc(50% - 50px);
   max-width: 500px;
   min-width: 300px;
-  height: 300px;
-  object-fit: cover;
   margin-bottom: 25px;
   margin-left: 25px;
   margin-right: 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-arrow {
+  position: relative;
+}
+
+.about-arrow-line {
+  position: absolute;
+  top: 24px;
+  width: calc(100% - 10px);
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.right-arrow .about-arrow-line {
+  left: 0;
+}
+
+.left-arrow .about-arrow-line {
+  right: 0;
+}
+
+.about-arrowhead {
+  position: absolute;
+  top: 17px;
+  height: 16px;
+}
+
+.right-arrow .about-arrowhead {
+  right: 0;
+}
+
+.left-arrow .about-arrowhead {
+  left: 0;
+}
+
+.about-arrow h1 {
+  visibility: hidden;
+}
+
+.about-photo {
+  width: 100%;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -201,12 +244,12 @@ input, textarea, button {
   width: calc(50% - 50px);
   max-width: 500px;
   min-width: 300px;
-  height: 300px;
-  margin-bottom: 50px;
   margin-left: 25px;
   margin-right: 25px;
-  display: flex;
-  align-items: center;
+}
+
+.right-aligned {
+  text-align: right;
 }
 
 .services-page-section.colored-section {
@@ -216,8 +259,6 @@ input, textarea, button {
 .services-page-content {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 7%;
-  padding-bottom: 7%;
 }
 
 .services-page-section-header {
@@ -426,7 +467,11 @@ input, textarea, button {
 }
 
 @media all and (max-width: 957px) {
-  .about-page-content-block img {
+  .about-page-content {
+    margin-top: 50px;
+  }
+
+  .about-img {
     width: 100%;
   }
 
