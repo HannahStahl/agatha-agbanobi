@@ -30,14 +30,19 @@ const Home = () => (
       <div className="home-page-intro">
         <h2>Insert another tagline statement here.</h2>
         <p>{intro}</p>
-        <a href="/about">
+        <div onClick={() => {
+          document.getElementById('home-page-section-3').scrollIntoView({
+            behavior: 'smooth',
+          });
+        }}
+        >
           <Button size="lg" variant="outline-dark">
-            Continue reading
+            View our services
           </Button>
-        </a>
+        </div>
       </div>
     </div>
-    <div className="home-page-content-block home-page-section-3">
+    <div className="home-page-content-block home-page-section-3" id="home-page-section-3">
       {cards.map((card) => (
         <div key={card.header} className="home-page-card" onClick={() => { window.location.pathname = card.link; }}>
           <div className="home-page-card-text">
