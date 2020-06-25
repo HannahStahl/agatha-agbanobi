@@ -60,8 +60,10 @@ const App = withRouter(() => {
   return (
     <>
       <NavBar />
-      <div className="page-content"><Routes programs={programs} blogPosts={blogPosts} /></div>
-      {window.location.pathname !== '/' && <Footer />}
+      <div className={window.location.pathname !== '/' ? 'page-content' : undefined}>
+        <Routes programs={programs} blogPosts={blogPosts} />
+      </div>
+      <Footer />
     </>
   );
 });
