@@ -24,7 +24,7 @@ const Routes = ({ programs, blogPosts }) => (
     <Route path="/about" exact component={About} />
     <Route path="/concepts" exact component={Definitions} />
     <Route path="/services" exact component={Services} />
-    <Route path="/programs" exact render={() => <Programs programs={programs} />} />
+    <Route path="/courses" exact render={() => <Programs programs={programs} />} />
     <Route path="/blog" exact render={() => <Blog blogPosts={blogPosts} />} />
     <Route path="/contact" exact component={Contact} />
     <Route component={NotFound} />
