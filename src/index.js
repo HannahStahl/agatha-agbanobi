@@ -60,7 +60,7 @@ const App = withRouter(() => {
   return (
     <>
       <NavBar />
-      <div className={window.location.pathname !== '/' ? 'page-content' : undefined}>
+      <div className={['/', '/services'].includes(window.location.pathname) ? undefined : 'page-content'}>
         <Routes programs={programs} blogPosts={blogPosts} />
       </div>
       <Footer />
