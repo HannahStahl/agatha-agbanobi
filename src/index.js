@@ -22,8 +22,8 @@ const Routes = ({ programs, blogPosts }) => (
   <Switch>
     <Route path="/" exact component={Home} />
     <Route path="/about" exact component={About} />
-    <Route path="/services" exact component={Services} />
     <Route path="/concepts" exact component={Definitions} />
+    <Route path="/services" exact component={Services} />
     <Route path="/programs" exact render={() => <Programs programs={programs} />} />
     <Route path="/blog" exact render={() => <Blog blogPosts={blogPosts} />} />
     <Route path="/contact" exact component={Contact} />
