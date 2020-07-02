@@ -2,21 +2,21 @@
   "home": "No matter how complex your talent development roadmap, we have the capabilities and experience to develop the diverse, inclusive and thriving teams you need to better serve your clients. We can help you make culturally responsive decisions and achieve sustainable outcomes.",
   "home-cards": [
     {
-      "link": "/concepts",
-      "icon": "list",
-      "header": "Resources",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-    },
-    {
       "link": "/services",
       "icon": "user-friends",
       "header": "Consulting",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
     },
     {
-      "link": "/courses",
+      "link": "/services",
+      "icon": "list",
+      "header": "Training",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+    },
+    {
+      "link": "/services",
       "icon": "laptop",
-      "header": "Courses",
+      "header": "Coaching",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
     }
   ],
@@ -59,11 +59,6 @@
     {
       "photo": "curriculum",
       "header": "Custom Training Curriculum Design",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
-    },
-    {
-      "photo": "courses",
-      "header": "Online Courses",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     }
   ],

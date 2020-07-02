@@ -10,7 +10,6 @@ import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
 import Definitions from './components/Definitions';
-import Programs from './components/Programs';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import NotFound from './components/NotFound';
@@ -18,13 +17,12 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import config from './config';
 
-const Routes = ({ programs, blogPosts }) => (
+const Routes = ({ blogPosts }) => (
   <Switch>
     <Route path="/" exact component={Home} />
     <Route path="/about" exact component={About} />
     <Route path="/concepts" exact component={Definitions} />
     <Route path="/services" exact component={Services} />
-    <Route path="/courses" exact render={() => <Programs programs={programs} />} />
     <Route path="/blog" exact render={() => <Blog blogPosts={blogPosts} />} />
     <Route path="/contact" exact component={Contact} />
     <Route component={NotFound} />
