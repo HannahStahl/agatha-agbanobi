@@ -13,6 +13,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   --purple: #42395e;
   --light-yellow: #fcf3cf;
+  --dark-yellow: #dcbb53;
   color: var(--purple);
 }
 
@@ -87,7 +88,7 @@ a {
 .underline-on-hover::after {
   content: "";
   position: absolute;
-  background-color: var(--purple);
+  background-color: var(--dark-yellow);
   bottom: -5px;
   left: 0px;
   width: 0px;
