@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 import content from '../content.json';
 import config from '../config';
 
@@ -20,6 +21,17 @@ const Services = () => (
         </div>
       </div>
     ))}
+    <div className="schedule-consultation-section">
+      <img
+        className="schedule-consultation-img"
+        src={`${config.publicCloudfrontURL}/agbanobi-schedule-consultation.jpg`}
+        alt={config.businessName}
+      />
+      <div className="schedule-consultation-text">
+        <h2 className="services-page-section-header">Interested in learning more?</h2>
+        <Button size="lg" variant="outline-dark">Schedule a free consultation</Button>
+      </div>
+    </div>
   </div>
 );
 

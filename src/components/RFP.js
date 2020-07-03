@@ -74,6 +74,7 @@ const RFP = () => {
           <form onSubmit={handleSubmit}>
             <FormGroup controlId="name">
               <FormControl
+                autoFocus
                 type="text"
                 placeholder="First and last name"
                 value={name}
