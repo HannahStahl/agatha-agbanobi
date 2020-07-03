@@ -11,15 +11,31 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --purple: #42395e;
+  --light-yellow: #fcf3cf;
+  color: var(--purple);
 }
 
 body *:not(.fas) {
   font-family: 'Poppins', sans-serif !important;
 }
 
+body {
+  color: var(--purple);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a {
+  color: var(--purple);
+}
+
+.btn-outline-dark {
+  border-color: var(--purple);
+  color: var(--purple);
 }
 
 .page-enter {
@@ -52,13 +68,27 @@ code {
   font-size: 1.25rem;
   margin-left: 12px;
   margin-right: 12px;
-  color: #212529;
+  color: var(--purple);
 }
 
 .navbar-light .nav-item {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+.logo {
+  width: 60px;
+  transition: all .2s;
+}
+
+.rise-on-hover {
+  transition: all .2s;
+}
+
+.form-control:focus {
+  border-color: var(--purple);
+  box-shadow: 0 0 0 0.2rem rgba(66, 57, 94, .25);
 }
 
 .page-content {
@@ -489,7 +519,7 @@ input[type="file"] {
 
 .blog-post .read-more {
   margin-top: 20px;
-  color: #007bff;
+  color: var(--purple);
 }
 
 .blog-post .read-more .fas {
@@ -578,7 +608,7 @@ input[type="file"] {
 }
 
 .footer a {
-  text-decoration: underline;
+  z-index: 10;
 }
 
 @media all and (min-height: 600px) {
@@ -702,8 +732,23 @@ input[type="file"] {
 }
 
 @media all and (hover: hover) {
+  .btn-outline-dark:hover {
+    background-color: var(--light-yellow);
+    border-color: var(--purple);
+    color: var(--purple);
+  }
+
+  .rise-on-hover:hover {
+    transform: translate(0%, -10%);
+  }
+
+  .logo:hover {
+    width: 65px;
+  }
+
   a:hover {
     text-decoration: none;
+    color: var(--purple);
   }
 
   .home-page-card:hover {
@@ -711,11 +756,11 @@ input[type="file"] {
   }
 
   .navbar-light .navbar-nav .nav-link:hover {
-    color: #212529;
+    color: var(--purple);
   }
 
   .blog-post .read-more:hover {
     cursor: pointer;
-    color: #0056b3;
+    color: var(--purple);
   }
 }
