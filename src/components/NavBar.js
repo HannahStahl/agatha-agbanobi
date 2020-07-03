@@ -10,7 +10,7 @@ const NavBar = () => (
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="ml-auto" activeKey={window.location.pathname}>
         <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
-        <Nav.Item><Nav.Link href="/concepts">Concepts</Nav.Link></Nav.Item>
+        <Nav.Item><Nav.Link href="/concepts">Principles</Nav.Link></Nav.Item>
         <Nav.Item><Nav.Link href="/services">Services</Nav.Link></Nav.Item>
         <Nav.Item><Nav.Link href="/blog">Blog</Nav.Link></Nav.Item>
         <Nav.Item><Nav.Link href="/contact">Contact</Nav.Link></Nav.Item>

@@ -11,7 +11,7 @@ const Definitions = () => (
     />
     <div className="photo-overlay" />
     <div className="definitions">
-      <h1>Organizational Leadership Defined</h1>
+      <h1>We understand optimal leadership because we&apos;re defining it.</h1>
       {content.definitions.map((paragraph) => (
         <p key={paragraph}>{paragraph}</p>
       ))}

@@ -11,8 +11,8 @@ const Home = () => (
     <img src={`${config.publicCloudfrontURL}/agbanobi-home.jpg`} alt={config.businessName} className="home-page-image" />
     <div className="photo-overlay" />
     <div className="home-page-content-block home-page-section-1">
-      <h1>Insert catchy tagline here.</h1>
-      <h3>Insert a lengthier subheader with more detail here.</h3>
+      <h1>OPTIMAL LEADERSHIP</h1>
+      <h3>Your Pathway to Leading Diverse, Thriving Teams</h3>
       <Button
         size="lg"
         variant="outline-dark"

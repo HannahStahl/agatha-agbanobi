@@ -3,20 +3,20 @@
   "home-cards": [
     {
       "link": "/services",
-      "icon": "list",
-      "header": "Training",
+      "icon": "user-friends",
+      "header": "Consult",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
     },
     {
       "link": "/services",
-      "icon": "user-friends",
-      "header": "Coaching",
+      "icon": "list",
+      "header": "Learn",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
     },
     {
       "link": "/services",
       "icon": "laptop",
-      "header": "Curriculum Design",
+      "header": "Lead",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
     }
   ],
@@ -58,8 +58,6 @@
     }
   ],
   "definitions": [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "Those we serve are at the center of our decisions. We believe servant leadership is necessary for team members to show up as their best selves. Representation matters when increasing the impact of our products and building trust. We believe diverse leadership and culture-building requires intentionality and follow-through to result in employee satisfaction and bottom-line success. A growth mindset provides a pathway to continuous improvement and high performance. We invest in talent development because it increases employee engagement and retention. People drive the culture of teams and organizations. We invest in personnel because – they’re worth it."
   ]
 }

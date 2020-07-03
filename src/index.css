@@ -8,13 +8,13 @@ html, body, #root {
 
 body {
   margin: 0;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body *:not(.fas) {
-  font-family: 'Manrope', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 code {
@@ -96,6 +96,11 @@ input[type="file"] {
 .home-page-section-1 {
   min-height: calc(100vh - 56px);
   border-bottom: solid 1px #ddd;
+}
+
+.home-page-section-1 h1 {
+  font-size: 50px;
+  letter-spacing: 1.5px;
 }
 
 .home-page-section-1 h3 {
@@ -186,7 +191,7 @@ input[type="file"] {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 7%;
+  padding: 5%;
   height: 350px;
   width: 100%;
 }
@@ -584,7 +589,7 @@ input[type="file"] {
 
 @media all and (min-width: 600px) {
   .home-page-section-1 h1 {
-    font-size: 50px;
+    font-size: 60px;
   }
 }
 
