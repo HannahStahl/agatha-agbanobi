@@ -68,6 +68,7 @@ a {
   font-size: 1.25rem;
   margin-left: 12px;
   margin-right: 12px;
+  padding: 0px;
   color: var(--purple);
 }
 
@@ -75,6 +76,33 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.underline-on-hover {
+  position: relative;
+}
+
+.underline-on-hover::after {
+  content: "";
+  position: absolute;
+  background-color: var(--purple);
+  bottom: -5px;
+  left: 0px;
+  width: 0px;
+  height: 1px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.underline-on-hover.active::after {
+  width: 100%;
+}
+
+.nav-link.active button {
+  background-color: var(--light-yellow);
 }
 
 .logo {
@@ -738,12 +766,18 @@ input[type="file"] {
     color: var(--purple);
   }
 
+  .underline-on-hover:hover:after,
+  .underline-on-hover:focus:after,
+  .underline-on-hover:active:after {
+    width: 100%;
+  }
+
   .rise-on-hover:hover {
     transform: translate(0%, -10%);
   }
 
   .logo:hover {
-    width: 65px;
+    width: 64px;
   }
 
   a:hover {
