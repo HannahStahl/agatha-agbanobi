@@ -13,7 +13,7 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <div className="home-page-content">
       <div className="home-page-content-block home-page-section-1">
         {photos.map((index) => (
           <img
@@ -39,6 +39,7 @@ const Home = () => {
           <div className="down-arrow-line" />
           <img className="down-arrowhead" src="arrowhead-down.svg" alt="Learn more" />
         </div>
+        <div className="circle purple" />
       </div>
       <Fade bottom cascade>
         <div className="home-page-content-block home-page-section-2" id="home-page-section-2">
@@ -61,6 +62,7 @@ const Home = () => {
         </div>
       </Fade>
       <div className="home-page-content-block home-page-section-3" id="home-page-section-3">
+        <div className="circle yellow" />
         <NavLink to="/about" className="learn-more-link">
           <h2>Learn more</h2>
           <div className="home-page-right-arrow">
@@ -73,7 +75,7 @@ const Home = () => {
           </div>
         </NavLink>
       </div>
-    </>
+    </div>
   );
 };
 

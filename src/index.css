@@ -84,6 +84,10 @@ a {
   height: 83px;
 }
 
+.navbar-light .navbar-nav {
+  background-color: white;
+}
+
 .navbar-light .navbar-nav .nav-link {
   font-size: 1.25rem;
   margin-left: 12px;
@@ -171,6 +175,10 @@ input[type="file"] {
   border-radius: 0px !important;
 }
 
+.home-page-content {
+  overflow-x: hidden;
+}
+
 .home-page-image {
   position: fixed;
   top: 0;
@@ -215,6 +223,10 @@ input[type="file"] {
   min-height: calc(100vh - 83px);
   text-align: center;
   position: relative;
+}
+
+.home-page-section-2 {
+  padding-top: 60px;
 }
 
 @keyframes float {
@@ -413,6 +425,33 @@ input[type="file"] {
 .home-page-section-3 {
   display: flex;
   justify-content: center;
+  position: relative;
+}
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  animation-name: fadeIn;
+  animation-delay: 2s;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
+.circle.purple {
+  border: solid 10px var(--light-purple);
+  width: 40vw;
+  height: 40vw;
+  bottom: -20vw;
+  right: -10vw;
+}
+
+.circle.yellow {
+  border: solid 10px var(--light-yellow);
+  width: 30vw;
+  height: 30vw;
+  top: -25vw;
+  left: -10vw;
 }
 
 .about-page-banner {
