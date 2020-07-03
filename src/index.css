@@ -333,7 +333,7 @@ input[type="file"] {
   top: 24px;
   width: calc(100% - 10px);
   height: 2px;
-  background-color: #ccc;
+  background-color: var(--dark-yellow);
 }
 
 .right-arrow .about-arrow-line {
