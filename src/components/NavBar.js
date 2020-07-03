@@ -5,7 +5,12 @@ import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 
 const NavBar = () => (
-  <Navbar collapseOnSelect expand="lg" className={window.location.pathname === '/' ? 'navbar-transparent' : ''}>
+  <Navbar
+    collapseOnSelect
+    expand="lg"
+    fixed="top"
+    className={window.location.pathname === '/' ? 'navbar-fade-in' : ''}
+  >
     <Navbar.Brand as={NavLink} to="/">
       <img src="logo.png" alt="Home" className="logo" />
     </Navbar.Brand>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import FormGroup from 'react-bootstrap/FormGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
@@ -9,6 +9,10 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [buttonText, setButtonText] = useState('Send');
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const updateValue = (e, updateFcn) => {
     updateFcn(e.target.value);

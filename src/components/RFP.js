@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import FormGroup from 'react-bootstrap/FormGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
@@ -16,6 +16,10 @@ const RFP = () => {
   const [files, setFiles] = useState([]);
   const [comments, setComments] = useState('');
   const [buttonText, setButtonText] = useState('Submit');
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const updateValue = (e, updateFcn) => {
     updateFcn(e.target.value);
