@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import {
-  BrowserRouter, withRouter, Route, Switch,
-} from 'react-router-dom';
+import { CSSTransition } from 'react-transition-group';
+import { BrowserRouter, withRouter, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
@@ -13,23 +12,42 @@ import Definitions from './components/Definitions';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import RFP from './components/RFP';
-import NotFound from './components/NotFound';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import config from './config';
 
-const Routes = ({ blogPosts }) => (
-  <Switch>
-    <Route path="/" exact component={Home} />
-    <Route path="/about" exact component={About} />
-    <Route path="/concepts" exact component={Definitions} />
-    <Route path="/services" exact component={Services} />
-    <Route path="/blog" exact render={() => <Blog blogPosts={blogPosts} />} />
-    <Route path="/contact" exact component={Contact} />
-    <Route path="/submit-rfp" exact component={RFP} />
-    <Route component={NotFound} />
-  </Switch>
-);
+const Routes = ({ blogPosts }) => {
+  const routes = [
+    { path: '/', Component: Home },
+    { path: '/about', Component: About },
+    { path: '/principles', Component: Definitions },
+    { path: '/services', Component: Services },
+    { path: '/blog', Component: Blog, props: { blogPosts } },
+    { path: '/contact', Component: Contact },
+    { path: '/submit-rfp', Component: RFP },
+  ];
+  return (
+    <>
+      {routes.map(({ path, Component, props }) => (
+        <Route key={path} exact path={path}>
+          {({ match }) => (
+            <CSSTransition
+              in={match !== null}
+              timeout={300}
+              classNames="page"
+              unmountOnExit
+            >
+              <div className="page">
+                {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+                <Component {...props} match={match} />
+              </div>
+            </CSSTransition>
+          )}
+        </Route>
+      ))}
+    </>
+  );
+};
 
 const App = withRouter(() => {
   const [programs, setPrograms] = useState([]);
