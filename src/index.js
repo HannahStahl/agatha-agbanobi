@@ -12,6 +12,7 @@ import Services from './components/Services';
 import Definitions from './components/Definitions';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
+import RFP from './components/RFP';
 import NotFound from './components/NotFound';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
@@ -25,6 +26,7 @@ const Routes = ({ blogPosts }) => (
     <Route path="/services" exact component={Services} />
     <Route path="/blog" exact render={() => <Blog blogPosts={blogPosts} />} />
     <Route path="/contact" exact component={Contact} />
+    <Route path="/submit-rfp" exact component={RFP} />
     <Route component={NotFound} />
   </Switch>
 );

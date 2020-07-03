@@ -37,6 +37,12 @@ code {
   color: #212529;
 }
 
+.navbar-light .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .page-content {
   position: relative;
   padding: 7%;
@@ -56,6 +62,10 @@ h1 {
 
 input, textarea, button {
   border-radius: 10px !important;
+}
+
+input[type="file"] {
+  border-radius: 0px !important;
 }
 
 .home-page-image {
@@ -468,6 +478,34 @@ input, textarea, button {
 .contact-method .fas {
   margin-right: 20px;
   width: 20px;
+}
+
+.rfp-page {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rfp-page-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rfp-header {
+  margin-bottom: 20px;
+}
+
+.rfp-note {
+  margin-bottom: 30px;
+}
+
+.rfp-page h4 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.rfp-form {
+  width: 100%;
 }
 
 .footer {

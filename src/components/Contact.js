@@ -38,7 +38,7 @@ const Contact = () => {
         setMessage('');
       } else {
         setButtonText('Send');
-        window.alert(`An error occurred with the contact form. Please send an email directly to ${config.emailAddress}.`);
+        window.alert(`Oops! An error occurred with our contact form. Please send an email directly to ${config.emailAddress}.`);
       }
     });
   };

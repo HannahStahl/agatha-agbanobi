@@ -3,20 +3,20 @@
   "home-cards": [
     {
       "link": "/services",
-      "icon": "user-friends",
-      "header": "Consulting",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-    },
-    {
-      "link": "/services",
       "icon": "list",
       "header": "Training",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
     },
     {
       "link": "/services",
-      "icon": "laptop",
+      "icon": "user-friends",
       "header": "Coaching",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+    },
+    {
+      "link": "/services",
+      "icon": "laptop",
+      "header": "Curriculum Design",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
     }
   ],
