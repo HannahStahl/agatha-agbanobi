@@ -10,7 +10,7 @@ const dev = {
 //   apiURL: 'https://lbe32id9hg.execute-api.us-east-1.amazonaws.com/prod',
 //   cloudfrontBaseURL: 'https://d1esxin5o90ebg.cloudfront.net',
 //   emailURL: 'https://aiikn63n03.execute-api.us-east-1.amazonaws.com/prod/email/send',
-//   emailAddress: 'agatha.agbanobi@gmail.com',
+//   emailAddress: 'agathaa@optimalleadership.org',
 //   userID: 'us-east-1:47a5b5e0-f86e-438b-a150-0f4fc1fdfcfa',
 // };
 
