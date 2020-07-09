@@ -5,7 +5,6 @@ import config from '../config';
 import content from '../content.json';
 
 const cards = content['home-cards'];
-const photos = [1, 2, 3, 4, 5, 6, 7];
 
 const Home = () => {
   useEffect(() => {
@@ -14,24 +13,22 @@ const Home = () => {
 
   return (
     <div className="home-page-content">
-      <div className="home-page-content-block home-page-section-1">
-        {photos.map((index) => (
-          <img
-            key={index}
-            src={`${config.publicCloudfrontURL}/agbanobi-team-${index}.jpg`}
-            alt="Optimal Leader"
-            className={`home-page-bubble-photo bubble-${index}`}
-          />
-        ))}
-        <h1 className="home-page-header">
-          <img src="logo-empty.png" alt="Optimal Leadership" className="home-page-logo" />
-          PTIMAL LEADERSHIP
-        </h1>
-        <h3>Your Pathway to Leading Diverse, Thriving Teams</h3>
+      <div className="home-page-content-block home-page-section-2">
+        <Fade>
+          <div className="home-bio">
+            <img
+              src={`${config.publicCloudfrontURL}/agbanobi-bio.png`}
+              alt="Agatha Agbanobi"
+              className="bio-photo"
+            />
+            <h1 className="home-tagline">{content['home-tagline']}</h1>
+            {content.bio.map((paragraph) => <p>{paragraph}</p>)}
+          </div>
+        </Fade>
         <div className="circle navy" />
       </div>
       <Fade bottom cascade>
-        <div className="home-page-content-block home-page-section-2" id="home-page-section-2">
+        <div className="home-page-content-block home-page-section-3">
           {cards.map((card) => (
             <div
               key={card.header}
@@ -50,7 +47,7 @@ const Home = () => {
           ))}
         </div>
       </Fade>
-      <div className="home-page-content-block home-page-section-3" id="home-page-section-3">
+      <div className="home-page-content-block home-page-section-5">
         <div className="circle gold" />
         <NavLink to="/about" className="learn-more-link">
           <h2>Learn more</h2>

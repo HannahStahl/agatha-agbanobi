@@ -1,5 +1,11 @@
 {
-  "home": "No matter how complex your talent development roadmap, we have the capabilities and experience to develop the diverse, inclusive and thriving teams you need to better serve your clients. We can help you make culturally responsive decisions and achieve sustainable outcomes.",
+  "home-tagline": "Lead the diverse, inclusive, and thriving team you have always wanted.",
+  "bio": [
+    "The key to this brand of leadership lies in awareness and growth. You see, the more you understand that diversity is the ability to optimize diversity of thought and different cultural perspectives when making decisions, the more likely you are to attract and retain diverse talent. The more aware you are of racial and gender bias in your organization's systems and structures, the more likely you are to dismantle them and develop an inclusive workplace. The more you serve your team as a driver of their growth, the more they will thrive under your leadership.",
+    "A thriving team will always meet the bottom line. But a diverse and inclusive team will exceed it.",
+    "I am all about awareness and growth. That's why I am committed to providing you with the resources you need to become a better leader for diverse teams. I am here to help you make the right changes to take your team or organization to the next level.",
+    "My name is Agatha and I am your partner in this journey. I want to help you fulfill your potential as a leader and as a team."
+  ],
   "home-cards": [
     {
       "link": "/services",
