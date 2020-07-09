@@ -18,7 +18,7 @@ const Home = () => {
         {photos.map((index) => (
           <img
             key={index}
-            src={`${config.publicCloudfrontURL}/agbanobi-leader-${index}.png`}
+            src={`${config.publicCloudfrontURL}/agbanobi-team-${index}.jpg`}
             alt="Optimal Leader"
             className={`home-page-bubble-photo bubble-${index}`}
           />
