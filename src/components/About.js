@@ -26,9 +26,12 @@ const About = () => {
     <>
       <div className="about-page-banner">
         <img src={`${config.publicCloudfrontURL}/agbanobi-about-0.jpg`} alt={config.businessName} />
-        <h2 className="about-page-banner-text">{content['about-banner']}</h2>
+        <div className="about-page-banner-text-container">
+          <h2 className="about-page-banner-text">{content['about-banner']}</h2>
+        </div>
       </div>
       <div className="about-page-content">
+        <p className="about-intro">{content['about-intro']}</p>
         {content.about.map((paragraph, index) => (
           <div key={paragraph.header} className="about-page-section">
             <div className="about-page-content-block">

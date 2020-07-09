@@ -470,7 +470,15 @@ input[type="file"] {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: right;
   z-index: -1;
+}
+
+.about-page-banner-text-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .about-page-banner-text {
@@ -485,6 +493,10 @@ input[type="file"] {
   margin-top: 350px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.about-intro {
+  margin-bottom: 80px;
 }
 
 .about-page-section-header {
@@ -568,23 +580,6 @@ input[type="file"] {
 
 .right-aligned {
   text-align: right;
-}
-
-.definitions {
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 40px;
-  border-radius: 20px;
-  border: solid 1px #ddd;
-}
-
-.definitions-img {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
 }
 
 .services-page-section.colored-section {

@@ -8,7 +8,6 @@ import * as serviceWorker from './serviceWorker';
 import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
-import Definitions from './components/Definitions';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import RFP from './components/RFP';
@@ -20,7 +19,6 @@ const Routes = ({ blogPosts }) => {
   const routes = [
     { path: '/', Component: Home },
     { path: '/about', Component: About },
-    { path: '/principles', Component: Definitions },
     { path: '/services', Component: Services },
     { path: '/blog', Component: Blog, props: { blogPosts } },
     { path: '/contact', Component: Contact },

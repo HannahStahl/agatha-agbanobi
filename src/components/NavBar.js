@@ -21,19 +21,16 @@ const NavBar = () => (
           <Nav.Link eventKey="1" as={NavLink} to="/about" className="underline-on-hover">About</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="2" as={NavLink} to="/principles" className="underline-on-hover">Principles</Nav.Link>
+          <Nav.Link eventKey="2" as={NavLink} to="/services" className="underline-on-hover">Services</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="3" as={NavLink} to="/services" className="underline-on-hover">Services</Nav.Link>
+          <Nav.Link eventKey="3" as={NavLink} to="/blog" className="underline-on-hover">Blog</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="4" as={NavLink} to="/blog" className="underline-on-hover">Blog</Nav.Link>
+          <Nav.Link eventKey="4" as={NavLink} to="/contact" className="underline-on-hover">Contact</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="5" as={NavLink} to="/contact" className="underline-on-hover">Contact</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="6" as={NavLink} to="/submit-rfp">
+          <Nav.Link eventKey="5" as={NavLink} to="/submit-rfp">
             <Button size="lg" variant="outline-dark">Submit RFP</Button>
           </Nav.Link>
         </Nav.Item>
