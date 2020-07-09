@@ -12,7 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --light-navy: #d2d0d8;
-  --navy: #42395e;
+  --navy: rgb(9, 2, 53);
   --light-gold: #fae79c;
   --dark-gold: rgb(255, 195, 0);
   color: var(--navy);
@@ -215,6 +215,10 @@ input[type="file"] {
   margin-bottom: 25px;
 }
 
+.home-tagline {
+  text-shadow: -2px 2px 1px var(--light-gold);
+}
+
 .bio-photo {
   width: 100%;
   object-fit: contain;
@@ -230,7 +234,7 @@ input[type="file"] {
   background-color: rgba(210, 208, 216, 0.3);
 }
 
-.about-us-header {
+.home-section-header {
   width: 100%;
   text-align: center;
   text-decoration: underline;
@@ -277,9 +281,20 @@ input[type="file"] {
 }
 
 .home-page-section-5 {
-  display: flex;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
+  text-align: center;
+}
+
+.home-page-section-5 form {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-page-schedule-consult {
+  margin-bottom: 30px;
 }
 
 .circle {
