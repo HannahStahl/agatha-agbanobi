@@ -28,25 +28,14 @@ const Home = () => {
           PTIMAL LEADERSHIP
         </h1>
         <h3>Your Pathway to Leading Diverse, Thriving Teams</h3>
-        <div
-          className="down-arrow"
-          onClick={() => {
-            document.getElementById('home-page-section-2').scrollIntoView({
-              behavior: 'smooth',
-            });
-          }}
-        >
-          <div className="down-arrow-line" />
-          <img className="down-arrowhead" src="arrowhead-down.svg" alt="Learn more" />
-        </div>
         <div className="circle navy" />
       </div>
       <Fade bottom cascade>
         <div className="home-page-content-block home-page-section-2" id="home-page-section-2">
-          {cards.map((card, index) => (
+          {cards.map((card) => (
             <div
               key={card.header}
-              className={`home-page-card home-page-card-${index + 1}`}
+              className="home-page-card"
               onClick={() => { window.location.pathname = card.link; }}
             >
               <div className="home-page-card-text">

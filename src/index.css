@@ -226,7 +226,13 @@ input[type="file"] {
 }
 
 .home-page-section-2 {
-  padding-top: 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(210, 208, 216, 0.3);
 }
 
 @keyframes float {
@@ -840,29 +846,6 @@ input[type="file"] {
   }
 }
 
-@media all and (min-width: 1330px) {
-  .home-page-section-2 {
-    position: relative;
-    margin-bottom: 450px;
-  }
-
-  .home-page-card {
-    position: absolute;
-    top: 60px;
-    left: calc((100% - 1230px)/2);
-  }
-
-  .home-page-card-2 {
-    top: 180px;
-    left: calc((100% - 1230px)/2 + 410px);
-  }
-
-  .home-page-card-3 {
-    top: 300px;
-    left: calc((100% - 1230px)/2 + 820px);
-  }
-}
-
 @media all and (min-width: 1200px) {
   p, a {
     font-size: 1.25rem;
@@ -908,14 +891,6 @@ input[type="file"] {
 
   .down-arrow {
 	  animation: float 2s cubic-bezier(0.34, 0.61, 0.59, 1.11) infinite, fadeIn 2s ease 1.5s both;
-  }
-}
-
-@media all and (max-width: 1229px) {
-  .home-page-section-2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 }
 
