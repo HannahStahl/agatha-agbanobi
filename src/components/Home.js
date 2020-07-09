@@ -33,10 +33,10 @@ const Home = () => {
         <Fade bottom cascade>
           <div className="home-page-cards">
             {cards.map((card, index) => (
-              <div
+              <NavLink
                 key={card.header}
                 className="home-page-card"
-                onClick={() => { window.location.pathname = card.link; }}
+                to={card.link}
               >
                 <div className="home-page-card-text">
                   <img
@@ -47,7 +47,7 @@ const Home = () => {
                   <h3>{card.header}</h3>
                   <p>{card.text}</p>
                 </div>
-              </div>
+              </NavLink>
             ))}
           </div>
         </Fade>
