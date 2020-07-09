@@ -27,39 +27,34 @@ const Home = () => {
         </Fade>
         <div className="circle navy" />
       </div>
-      <Fade bottom cascade>
-        <div className="home-page-content-block home-page-section-3">
-          {cards.map((card) => (
-            <div
-              key={card.header}
-              className="home-page-card"
-              onClick={() => { window.location.pathname = card.link; }}
-            >
-              <div className="home-page-card-text">
-                <h2>{card.header}</h2>
-                <p>{card.text}</p>
+      <div className="home-page-content-block home-page-section-3">
+        <h1 className="about-us-header">About Us</h1>
+        <p className="about-us">{content['about-us']}</p>
+        <Fade bottom cascade>
+          <div className="home-page-cards">
+            {cards.map((card, index) => (
+              <div
+                key={card.header}
+                className="home-page-card"
+                onClick={() => { window.location.pathname = card.link; }}
+              >
+                <div className="home-page-card-text">
+                  <img
+                    src={`${config.publicCloudfrontURL}/agbanobi-about-us-${index + 1}.jpg`}
+                    alt="Optimal Leadership"
+                    className="about-us-photo"
+                  />
+                  <h3>{card.header}</h3>
+                  <p>{card.text}</p>
+                </div>
               </div>
-              <div className="home-page-card-text-hidden">
-                <h2>{card.header}</h2>
-                <p>{card.text}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </Fade>
+            ))}
+          </div>
+        </Fade>
+      </div>
       <div className="home-page-content-block home-page-section-5">
         <div className="circle gold" />
-        <NavLink to="/about" className="learn-more-link">
-          <h2>Learn more</h2>
-          <div className="home-page-right-arrow">
-            <div className="home-page-right-arrow-line" />
-            <img
-              className="home-page-right-arrowhead"
-              src="arrowhead-right-navy.svg"
-              alt="Learn more"
-            />
-          </div>
-        </NavLink>
+        <div>Insert consultation form here.</div>
       </div>
     </div>
   );

@@ -6,24 +6,22 @@
     "I am all about awareness and growth. That's why I am committed to providing you with the resources you need to become a better leader for diverse teams. I am here to help you make the right changes to take your team or organization to the next level.",
     "My name is Agatha and I am your partner in this journey. I want to help you fulfill your potential as a leader and as a team."
   ],
+  "about-us": "Agatha started Optimal Leadership to help organization leaders manage diverse teams. We specialize in diversity and inclusion trainings, anti-bias recruiting, promotion and retention strategies, and leadership coaching. We help teams use their diversity as a superpower. We help leaders to develop leaders. We know you care about the people on your team! We’re here to help you grow and lead them!",
   "home-cards": [
     {
       "link": "/services",
-      "icon": "user-friends",
-      "header": "Consult",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+      "header": "Diversity & Inclusion Management Consulting",
+      "text": "Partner with our consultants to evaluate and improve the diversity and inclusivity of your hiring and promotion practices, retention strategies and overall work environment."
     },
     {
       "link": "/services",
-      "icon": "list",
-      "header": "Learn",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+      "header": "Diversity & Inclusion Institute",
+      "text": "An immersive training course that is tailored to your organization’s needs. This event puts you face-to-face with our diversity and inclusion experts. Sign up to learn about how you and your team can ensure your workplace culture is a place of belonging, growth, and opportunity for everyone."
     },
     {
       "link": "/services",
-      "icon": "laptop",
-      "header": "Lead",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+      "header": "Inclusive Leadership Coaching",
+      "text": "A 3-minute teaching video from Agatha every day on the principles of inclusive leadership brought to you by Optimal Leadership."
     }
   ],
   "about-banner": "We understand optimal leadership because we're defining it.",
