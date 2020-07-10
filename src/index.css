@@ -221,6 +221,8 @@ input[type="file"] {
 .home-page-section-2 {
   width: 100%;
   background-color: white;
+  border-top: solid 1px var(--navy);
+  border-bottom: solid 1px var(--navy);
 }
 
 .home-bio {
@@ -319,6 +321,8 @@ input[type="file"] {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  border-top: solid 1px var(--navy);
+  padding-bottom: 40px;
 }
 
 .home-page-section-5 form {
