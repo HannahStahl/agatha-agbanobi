@@ -1,4 +1,6 @@
 {
+  "home-header": "We help teams optimize their diversity to develop inclusive and thriving workplace culture.",
+  "home-intro": "Optimal Leadership provides interactive, thought-provoking trainings and coaching sessions that help teams and leaders tackle tough issues related to diversity and inclusion, belonging, leadership, and anti-bias in recruiting, promotion and retention. We know you care about the diverse people on your team. We're here to help you grow and lead them.",
   "home-tagline": "Lead the diverse, inclusive, and thriving team you have always wanted.",
   "bio": [
     "The key to this brand of leadership lies in awareness and growth. You see, the more you understand that diversity is the ability to optimize diversity of thought and different cultural perspectives when making decisions, the more likely you are to attract and retain diverse talent. The more aware you are of racial and gender bias in your organization's systems and structures, the more likely you are to dismantle them and develop an inclusive workplace. The more you serve your team as a driver of their growth, the more they will thrive under your leadership.",
@@ -6,12 +8,12 @@
     "I am all about awareness and growth. That's why I am committed to providing you with the resources you need to become a better leader for diverse teams. I am here to help you make the right changes to take your team or organization to the next level.",
     "My name is Agatha and I am your partner in this journey. I want to help you fulfill your potential as a leader and as a team."
   ],
-  "about-us": "Agatha started Optimal Leadership to help organization leaders manage diverse teams. We specialize in diversity and inclusion trainings, anti-bias recruiting, promotion and retention strategies, and leadership coaching. We help teams use their diversity as a superpower. We help leaders to develop leaders. We know you care about the people on your team! We’re here to help you grow and lead them!",
+  "about-us": "We provide modern, interactive workshops and coaching sessions on diversity, inclusive leadership and belonging to help leaders and teams show up as their best selves.",
   "home-cards": [
     {
       "link": "/services",
       "header": "Diversity & Inclusion Management Consulting",
-      "text": "Partner with our consultants to evaluate and improve the diversity and inclusivity of your hiring and promotion practices, retention strategies and overall work environment."
+      "text": "Partner with our consultants to evaluate and improve the anti-bias and inclusivity of your hiring and promotion practices, retention strategies and overall work environment."
     },
     {
       "link": "/services",

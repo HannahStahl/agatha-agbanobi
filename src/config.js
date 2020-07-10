@@ -6,19 +6,18 @@ const dev = {
   userID: 'us-east-1:0c9864e8-7db2-45fc-9c5a-ed2c11e2d9cf',
 };
 
-// const prod = {
-//   apiURL: 'https://lbe32id9hg.execute-api.us-east-1.amazonaws.com/prod',
-//   cloudfrontBaseURL: 'https://d1esxin5o90ebg.cloudfront.net',
-//   emailURL: 'https://aiikn63n03.execute-api.us-east-1.amazonaws.com/prod/email/send',
-//   emailAddress: 'agathaa@optimalleadership.org',
-//   userID: 'us-east-1:47a5b5e0-f86e-438b-a150-0f4fc1fdfcfa',
-// };
+const prod = {
+  apiURL: 'https://lbe32id9hg.execute-api.us-east-1.amazonaws.com/prod',
+  cloudfrontBaseURL: 'https://d1esxin5o90ebg.cloudfront.net',
+  emailURL: 'https://aiikn63n03.execute-api.us-east-1.amazonaws.com/prod/email/send',
+  emailAddress: 'agathaa@optimalleadership.org',
+  userID: 'us-east-1:47a5b5e0-f86e-438b-a150-0f4fc1fdfcfa',
+};
 
 // Default to dev if not set
-// const config = process.env.REACT_APP_STAGE === 'prod'
-//   ? prod
-//   : dev;
-const config = dev; // TODO change back once prod content has been added
+const config = process.env.REACT_APP_STAGE === 'prod'
+  ? prod
+  : dev;
 
 export default {
   // Add common config values here

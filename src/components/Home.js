@@ -54,6 +54,31 @@ const Home = () => {
 
   return (
     <div className="home-page-content">
+      <div className="home-page-content-block home-page-section-1">
+        <img
+          src={`${config.publicCloudfrontURL}/agbanobi-landing.png`}
+          alt="Optimal Leadership"
+          className="landing-page-img"
+        />
+        <Fade><div className="photo-overlay" /></Fade>
+        <Fade>
+          <div className="home-intro">
+            <h1 className="home-header">{content['home-header']}</h1>
+            <p>{content['home-intro']}</p>
+            <Button
+              size="lg"
+              variant="outline-dark"
+              onClick={() => {
+                document.getElementById('home-page-section-5').scrollIntoView({
+                  behavior: 'smooth',
+                });
+              }}
+            >
+              Contact Us
+            </Button>
+          </div>
+        </Fade>
+      </div>
       <div className="home-page-content-block home-page-section-2">
         <Fade>
           <div className="home-bio">
@@ -66,18 +91,16 @@ const Home = () => {
             {content.bio.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
           </div>
         </Fade>
-        <div className="circle navy" />
       </div>
       <div className="home-page-content-block home-page-section-3">
-        <h1 className="home-section-header">About Us</h1>
+        <h1 className="home-section-header">Let us help</h1>
         <p className="about-us">{content['about-us']}</p>
         <Fade bottom cascade>
           <div className="home-page-cards">
             {cards.map((card, index) => (
-              <NavLink
+              <div
                 key={card.header}
                 className="home-page-card"
-                to={card.link}
               >
                 <div className="home-page-card-text">
                   <img
@@ -85,16 +108,15 @@ const Home = () => {
                     alt="Optimal Leadership"
                     className="about-us-photo"
                   />
-                  <h3>{card.header}</h3>
+                  <h4>{card.header}</h4>
                   <p>{card.text}</p>
                 </div>
-              </NavLink>
+              </div>
             ))}
           </div>
         </Fade>
       </div>
-      <div className="home-page-content-block home-page-section-5">
-        <div className="circle gold" />
+      <div className="home-page-content-block home-page-section-5" id="home-page-section-5">
         <h1 className="home-section-header">Let&apos;s get started!</h1>
         <Button size="lg" variant="outline-dark" className="home-page-schedule-consult">
           Schedule a free consultation
