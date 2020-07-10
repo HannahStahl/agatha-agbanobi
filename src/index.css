@@ -188,7 +188,6 @@ input[type="file"] {
 }
 
 .home-page-section-1 {
-  position: relative;
   min-height: calc(100vh - 120px);
   text-align: center;
   display: flex;
@@ -196,7 +195,7 @@ input[type="file"] {
 }
 
 .photo-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -206,7 +205,7 @@ input[type="file"] {
 }
 
 .landing-page-img {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
