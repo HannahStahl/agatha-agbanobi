@@ -36,6 +36,7 @@ const Home = () => {
         message,
         userEmail: email,
         clientEmail: config.emailAddress,
+        websiteEmail: config.websiteEmailAddress,
         siteDomain: window.location.origin,
       }),
     }).then((response) => response.json()).then((json) => {
@@ -94,14 +95,14 @@ const Home = () => {
         <p className="about-us">{content['about-us']}</p>
         <Fade bottom cascade>
           <div className="home-page-cards">
-            {cards.map((card, index) => (
+            {cards.map((card) => (
               <div
                 key={card.header}
                 className="home-page-card"
               >
                 <div className="home-page-card-text">
                   <img
-                    src={`${config.publicCloudfrontURL}/agbanobi-about-us-${index + 1}.jpg`}
+                    src={`${config.publicCloudfrontURL}/${card.photo}.jpg`}
                     alt="Optimal Leadership"
                     className="about-us-photo"
                   />

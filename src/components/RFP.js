@@ -43,6 +43,7 @@ const RFP = () => {
         message: comments,
         userEmail: email,
         clientEmail: config.emailAddress,
+        websiteEmail: config.websiteEmailAddress,
         siteDomain: window.location.origin,
       }),
     }).then((response) => response.json()).then((json) => {

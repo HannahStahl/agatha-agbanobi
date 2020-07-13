@@ -12,16 +12,19 @@
   "home-cards": [
     {
       "link": "/services",
+      "photo": "agbanobi-about-us-1",
       "header": "Diversity & Inclusion Management Consulting",
       "text": "Partner with our consultants to evaluate and improve the anti-bias and inclusivity of your hiring and promotion practices, retention strategies and overall work environment."
     },
     {
       "link": "/services",
+      "photo": "agbanobi-about-us-2",
       "header": "Diversity & Inclusion Institute",
       "text": "An immersive training course that is tailored to your organization’s needs. This event puts you face-to-face with our diversity and inclusion experts. Sign up to learn about how you and your team can ensure your workplace culture is a place of belonging, growth, and opportunity for everyone."
     },
     {
       "link": "/services",
+      "photo": "agbanobi-about-us-4",
       "header": "Inclusive Leadership Coaching",
       "text": "One-on-One coaching with Agatha on the principles of inclusive leadership. 3-minute daily coaching videos coming soon!"
     }
