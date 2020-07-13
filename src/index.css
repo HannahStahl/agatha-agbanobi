@@ -11,9 +11,9 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --light-navy: #d2d0d8;
+  --light-navy: rgb(195, 192, 212);
   --navy: rgb(9, 2, 53);
-  --light-gold: #fae79c;
+  --light-gold: rgb(250, 225, 144);
   --dark-gold: rgb(255, 195, 0);
   color: var(--navy);
 }
