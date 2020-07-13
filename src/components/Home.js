@@ -68,9 +68,7 @@ const Home = () => {
               size="lg"
               variant="outline-dark"
               onClick={() => {
-                document.getElementById('home-page-section-5').scrollIntoView({
-                  behavior: 'smooth',
-                });
+                document.getElementById('home-page-section-5').scrollIntoView();
               }}
             >
               Contact Us
@@ -92,7 +90,7 @@ const Home = () => {
         </Fade>
       </div>
       <div className="home-page-content-block home-page-section-3">
-        <h1 className="home-section-header">Let us help</h1>
+        <h1 className="home-section-header">Let us help!</h1>
         <p className="about-us">{content['about-us']}</p>
         <Fade bottom cascade>
           <div className="home-page-cards">
@@ -117,10 +115,12 @@ const Home = () => {
       </div>
       <div className="home-page-content-block home-page-section-5" id="home-page-section-5">
         <h1 className="home-section-header">Let&apos;s get started!</h1>
-        <Button size="lg" variant="outline-dark" className="home-page-schedule-consult">
-          Schedule a free consultation
-        </Button>
-        <p>or send me an email, and I will reply within one business day:</p>
+        <a href="https://calendly.com/optimalleadership/30min">
+          <Button size="lg" variant="outline-dark" className="home-page-schedule-consult">
+            Schedule a free consultation
+          </Button>
+        </a>
+        <p>or send me an email. I will reply within one business day.</p>
         <form onSubmit={handleSubmit}>
           <FormGroup controlId="name">
             <FormControl

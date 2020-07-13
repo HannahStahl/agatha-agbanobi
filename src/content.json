@@ -1,14 +1,14 @@
 {
-  "home-header": "We help teams optimize their diversity to develop inclusive and thriving workplace culture.",
-  "home-intro": "Optimal Leadership provides interactive, thought-provoking trainings and coaching sessions that help teams and leaders tackle tough issues related to diversity and inclusion, belonging, leadership, and anti-bias in recruiting, promotion and retention. We know you care about the diverse people on your team. We're here to help you grow and lead them.",
-  "home-tagline": "Lead the diverse, inclusive, and thriving team you have always wanted.",
+  "home-header": "We help teams optimize their diversity to develop an inclusive and thriving workplace culture.",
+  "home-intro": "Optimal Leadership provides interactive, thought-provoking trainings and coaching sessions to help teams and leaders tackle tough issues related to diversity and inclusion, belonging, leadership, anti-bias and allyship.",
+  "home-tagline": "Lead the diverse, inclusive and thriving team you have always wanted.",
   "bio": [
-    "The key to this brand of leadership lies in awareness and growth. You see, the more you understand that diversity is the ability to optimize diversity of thought and different cultural perspectives when making decisions, the more likely you are to attract and retain diverse talent. The more aware you are of racial and gender bias in your organization's systems and structures, the more likely you are to dismantle them and develop an inclusive workplace. The more you serve your team as a driver of their growth, the more they will thrive under your leadership.",
-    "A thriving team will always meet the bottom line. But a diverse and inclusive team will exceed it.",
+    "The key to this brand of leadership lies in awareness and growth. You see, the more you understand that team diversity is the ability to optimize different perspectives when making decisions, the more likely you are to attract and retain diverse talent. The more aware you are of racial and gender bias in your organization's systems and structures, the more likely you are to dismantle them and develop an inclusive workplace. The more you serve your team as a driver of their growth, the more they will thrive under your leadership.",
+    "A thriving team will always achieve the bottom line, but a diverse and inclusive team will exceed it.",
     "I am all about awareness and growth. That's why I am committed to providing you with the resources you need to become a better leader for diverse teams. I am here to help you make the right changes to take your team or organization to the next level.",
     "My name is Agatha and I am your partner in this journey. I want to help you fulfill your potential as a leader and as a team."
   ],
-  "about-us": "We provide modern, interactive workshops and coaching sessions on diversity, inclusive leadership and belonging to help leaders and teams show up as their best selves.",
+  "about-us": "We provide in-person and virtual interactive workshops and consultations on diversity and inclusion to help leaders and teams show up as their best selves.",
   "home-cards": [
     {
       "link": "/services",
@@ -23,7 +23,7 @@
     {
       "link": "/services",
       "header": "Inclusive Leadership Coaching",
-      "text": "A 3-minute teaching video from Agatha every day on the principles of inclusive leadership brought to you by Optimal Leadership."
+      "text": "One-on-One coaching with Agatha on the principles of inclusive leadership. 3-minute daily coaching videos coming soon!"
     }
   ],
   "about-banner": "We understand optimal leadership because we're defining it.",

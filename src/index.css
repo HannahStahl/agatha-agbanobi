@@ -239,6 +239,14 @@ input[type="file"] {
   text-shadow: -2px 2px 1px var(--light-gold);
 }
 
+.home-header {
+  font-size: 2.75rem;
+}
+
+.home-intro p {
+  font-size: 1.2rem;
+}
+
 .home-tagline {
   text-decoration: underline;
   text-decoration-color: var(--dark-gold);
