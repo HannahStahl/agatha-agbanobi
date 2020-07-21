@@ -1,10 +1,12 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
+import config from '../config';
 
 const getLogo = (devicePixelRatio) => {
-  if (devicePixelRatio === 3) return 'logo_3x.png';
-  if (devicePixelRatio === 2) return 'logo_2x.png';
-  return 'logo.png';
+  const logoUrl = `${config.publicCloudfrontURL}/agbanobi-logo`;
+  if (devicePixelRatio === 3) return `${logoUrl}_3x.png`;
+  if (devicePixelRatio === 2) return `${logoUrl}_2x.png`;
+  return `${logoUrl}.png`;
 };
 
 const NavBar = () => (
