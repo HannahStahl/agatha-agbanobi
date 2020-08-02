@@ -8,6 +8,7 @@ import * as serviceWorker from './serviceWorker';
 import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
+import Programs from './components/Programs';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import RFP from './components/RFP';
@@ -15,11 +16,12 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import config from './config';
 
-const Routes = ({ blogPosts }) => {
+const Routes = ({ programs, blogPosts }) => {
   const routes = [
     { path: '/', Component: Home },
     { path: '/about', Component: About },
     { path: '/services', Component: Services },
+    { path: '/programs', Component: Programs, props: { programs } },
     { path: '/blog', Component: Blog, props: { blogPosts } },
     { path: '/contact', Component: Contact },
     { path: '/submit-rfp', Component: RFP },
