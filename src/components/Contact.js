@@ -97,7 +97,7 @@ const Contact = () => {
         <div className="contact-details">
           <div className="contact-method">
             <p><i className="fas fa-envelope" /></p>
-            <a href="mailto:email.address@gmail.com">info@optimalleadership.org</a>
+            <a href="mailto:info@optimalleadership.org">info@optimalleadership.org</a>
           </div>
           <div className="contact-method">
             <p><i className="fas fa-phone-alt" /></p>
